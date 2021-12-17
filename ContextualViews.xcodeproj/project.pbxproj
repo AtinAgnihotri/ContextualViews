@@ -15,6 +15,22 @@
 		F82420DE276CEC330004A63E /* CardItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420DD276CEC330004A63E /* CardItems.swift */; };
 		F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */; };
 		F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */; };
+		F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E5276CF0150004A63E /* ImageCardView.swift */; };
+		F82420E8276CF0520004A63E /* SmallCardWithArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */; };
+		F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */; };
+		F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EC276CF6B60004A63E /* CardViewModel.swift */; };
+		F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EE276CF7D90004A63E /* GenericCardType.swift */; };
+		F82420F2276D03100004A63E /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F1276D03100004A63E /* Color+Extensions.swift */; };
+		F82420F6276D0CFF0004A63E /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F82420F5276D0CFF0004A63E /* Roboto.ttf */; };
+		F82420F7276D0CFF0004A63E /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F82420F5276D0CFF0004A63E /* Roboto.ttf */; };
+		F82420FA276D1B7E0004A63E /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* CardBackground.swift */; };
+		F82420FB276D1B7E0004A63E /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* CardBackground.swift */; };
+		F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FC276D1FBD0004A63E /* CTAViewModel.swift */; };
+		F82420FE276D1FBD0004A63E /* CTAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FC276D1FBD0004A63E /* CTAViewModel.swift */; };
+		F8242100276D22530004A63E /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAView.swift */; };
+		F8242101276D22530004A63E /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAView.swift */; };
+		F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
+		F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -40,6 +56,18 @@
 		F82420DD276CEC330004A63E /* CardItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItems.swift; sourceTree = "<group>"; };
 		F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayCardView.swift; sourceTree = "<group>"; };
 		F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDisplayCardView.swift; sourceTree = "<group>"; };
+		F82420E5276CF0150004A63E /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardWithArrowView.swift; sourceTree = "<group>"; };
+		F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWidthCardView.swift; sourceTree = "<group>"; };
+		F82420EC276CF6B60004A63E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		F82420EE276CF7D90004A63E /* GenericCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardType.swift; sourceTree = "<group>"; };
+		F82420F1276D03100004A63E /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F82420F3276D0AF40004A63E /* ContextualViews--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ContextualViews--iOS--Info.plist"; sourceTree = "<group>"; };
+		F82420F5276D0CFF0004A63E /* Roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Roboto.ttf; sourceTree = "<group>"; };
+		F82420F9276D1B7E0004A63E /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
+		F82420FC276D1FBD0004A63E /* CTAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAViewModel.swift; sourceTree = "<group>"; };
+		F82420FF276D22530004A63E /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
+		F8242102276D309D0004A63E /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
 		F839D135276CD07B00756044 /* ContextualViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewsApp.swift; sourceTree = "<group>"; };
 		F839D136276CD07B00756044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F839D137276CD07D00756044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,15 +101,46 @@
 		F82420DF276CEF9B0004A63E /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				F82420F8276D1B6E0004A63E /* Components */,
 				F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */,
 				F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */,
+				F82420E5276CF0150004A63E /* ImageCardView.swift */,
+				F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */,
+				F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */,
+				F82420EE276CF7D90004A63E /* GenericCardType.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		F82420F0276D03020004A63E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F82420F1276D03100004A63E /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F82420F4276D0CE70004A63E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F82420F5276D0CFF0004A63E /* Roboto.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F82420F8276D1B6E0004A63E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F82420F9276D1B7E0004A63E /* CardBackground.swift */,
+				F82420FF276D22530004A63E /* CTAView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F839D12F276CD07A00756044 = {
 			isa = PBXGroup;
 			children = (
+				F82420F3276D0AF40004A63E /* ContextualViews--iOS--Info.plist */,
 				F839D134276CD07B00756044 /* Shared */,
 				F839D143276CD07D00756044 /* macOS */,
 				F839D13D276CD07D00756044 /* Products */,
@@ -146,6 +205,8 @@
 			children = (
 				F87A62DB276CD4840083FBE1 /* ContextualViewModel.swift */,
 				F82420D5276CDF890004A63E /* CardGroupViewModel.swift */,
+				F82420EC276CF6B60004A63E /* CardViewModel.swift */,
+				F82420FC276D1FBD0004A63E /* CTAViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,7 +222,10 @@
 		F87A62E2276CD6950083FBE1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F82420F4276D0CE70004A63E /* Fonts */,
+				F82420F0276D03020004A63E /* Extensions */,
 				F82420D3276CDBF10004A63E /* Constants.swift */,
+				F8242102276D309D0004A63E /* CustomViewModifiers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -246,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F839D149276CD07D00756044 /* Assets.xcassets in Resources */,
+				F82420F6276D0CFF0004A63E /* Roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F839D14A276CD07D00756044 /* Assets.xcassets in Resources */,
+				F82420F7276D0CFF0004A63E /* Roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,19 +331,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82420D8276CDFFF0004A63E /* CardDesignType.swift in Sources */,
+				F8242100276D22530004A63E /* CTAView.swift in Sources */,
 				F839D147276CD07D00756044 /* ContentView.swift in Sources */,
+				F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */,
+				F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
 				F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */,
 				F87A62DC276CD4840083FBE1 /* ContextualViewModel.swift in Sources */,
 				F87A62E0276CD5C50083FBE1 /* Webservice.swift in Sources */,
 				F87A62D8276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F82420D4276CDBF10004A63E /* Constants.swift in Sources */,
+				F82420FA276D1B7E0004A63E /* CardBackground.swift in Sources */,
 				F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F82420DA276CE92B0004A63E /* ContextualCardGroupView.swift in Sources */,
+				F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */,
 				F82420DC276CE93A0004A63E /* ContextualCardView.swift in Sources */,
+				F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */,
 				F82420D6276CDF890004A63E /* CardGroupViewModel.swift in Sources */,
+				F82420E8276CF0520004A63E /* SmallCardWithArrowView.swift in Sources */,
+				F82420F2276D03100004A63E /* Color+Extensions.swift in Sources */,
+				F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */,
 				F82420DE276CEC330004A63E /* CardItems.swift in Sources */,
 				F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */,
 				F87A62D4276CD4020083FBE1 /* Card.swift in Sources */,
+				F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F839D148276CD07D00756044 /* ContentView.swift in Sources */,
+				F82420FE276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
+				F82420FB276D1B7E0004A63E /* CardBackground.swift in Sources */,
 				F87A62DD276CD4840083FBE1 /* ContextualViewModel.swift in Sources */,
+				F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
 				F87A62E1276CD5C50083FBE1 /* Webservice.swift in Sources */,
+				F8242101276D22530004A63E /* CTAView.swift in Sources */,
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F87A62D5276CD4020083FBE1 /* Card.swift in Sources */,
@@ -417,6 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContextualViews--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,6 +527,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContextualViews--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

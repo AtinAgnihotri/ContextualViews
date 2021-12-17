@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContextualCardView: View {
+    @ObservedObject var cardVM: CardViewModel
+    
+    init(_ cardVM: CardViewModel) {
+        self.cardVM = cardVM
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(cardVM.name)
     }
 }
 
-struct ContextualCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContextualCardView()
-    }
-}
+//struct ContextualCardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContextualCardView()
+//    }
+//}

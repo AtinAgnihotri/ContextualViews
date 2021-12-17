@@ -14,6 +14,7 @@ struct Card: Decodable {
     let formattedTitle: FormattedText?
     let title: String?
     let formattedDescription: FormattedText?
+    let description: String?
     let icon: CardImage?
     let url: String?
     let bgImage: CardImage?

@@ -17,11 +17,16 @@ struct ContextualView: View {
             } else {
                 List {
                     ForEach(contextualVM.cardGroups, id:\.uuid) {
-                        Text($0.name)
+                        ContextualCardGroupView($0)
+                            .listRowInsets(EdgeInsets())
+                            .padding(.vertical)
                     }
-                }.refreshable {
+                }
+                .listSeparatorStyle(style: .none)
+                .refreshable {
                     contextualVM.refresh()
                 }
+                .frame(maxWidth: .infinity)
             }
         }
         
