@@ -9,7 +9,13 @@ import Foundation
 
 class ContextualViewModel: ObservableObject {
     
-    @Published var cardGroups: [CardGroupViewModel]
+    @Published var cardGroups: [CardGroupViewModel] {
+        didSet {
+            cardGroups.forEach {
+                print($0)
+            }
+        }
+    }
     
     var isLoading: Bool {
         cardGroups.isEmpty

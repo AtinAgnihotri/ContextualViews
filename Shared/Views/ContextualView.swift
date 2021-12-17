@@ -16,7 +16,7 @@ struct ContextualView: View {
                 Text("Loading . . .")
             } else {
                 List {
-                    ForEach(contextualVM.cardGroups, id:\.id) {
+                    ForEach(contextualVM.cardGroups, id:\.uuid) {
                         Text($0.name)
                     }
                 }.refreshable {

@@ -9,9 +9,11 @@ import Foundation
 
 class CardGroupViewModel {
     private let cardGroup: CardGroup
+    let uuid: UUID
     
     init(_ cardGroup: CardGroup) {
         self.cardGroup = cardGroup
+        self.uuid = UUID()
     }
     
     var id: Int {
