@@ -25,3 +25,11 @@ extension View {
         ModifiedContent(content: self, modifier: ListSeparatorStyle(style: style))
     }
 }
+
+extension Image {
+    func icon() -> some View {
+        self.resizable()
+            .scaledToFit()
+            .clipShape(Circle())
+    }
+}

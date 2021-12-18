@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContextualView: View {
     @ObservedObject var contextualVM = ContextualViewModel()
+    
+    init() {
+//        UITableView.appearance().separatorStyle = .none
+//        UITableViewCell.appearance().backgroundColor = .green
+//        UITableView.appearance().backgroundColor = .green
+    }
         
     var body: some View {
         ZStack {
@@ -19,8 +25,10 @@ struct ContextualView: View {
                     ForEach(contextualVM.cardGroups, id:\.uuid) {
                         ContextualCardGroupView($0)
                             .listRowInsets(EdgeInsets())
-                            .padding(.vertical)
+//                            .padding(.vertical)
                     }
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
                 }
                 .listSeparatorStyle(style: .none)
                 .refreshable {

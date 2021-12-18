@@ -51,7 +51,7 @@ class CardViewModel: ObservableObject {
         if let bgColor = card.bgColor {
             return Color(hex: bgColor)
         }
-        return .clear
+        return Color(hex: "#FFFFFF")
     }
     
     var bgImageUrl: String {
@@ -64,6 +64,22 @@ class CardViewModel: ObservableObject {
     
     var hasCTA: Bool {
         !cta.isEmpty
+    }
+    
+    var hasBgColor: Bool {
+        card.bgColor != nil
+    }
+    
+    var iconUrl: String {
+        card.icon?.imageUrl ?? ""
+    }
+    
+    var assetName: String {
+        card.icon?.assetType ?? ""
+    }
+    
+    var hasAsset: Bool {
+        card.icon?.assetType != nil
     }
     
     private func getFormattedString(_ formattedText: FormattedText) -> AttributedString {
@@ -98,5 +114,7 @@ class CardViewModel: ObservableObject {
         }
         return attrString
     }
+    
+    
     
 }

@@ -31,6 +31,8 @@
 		F8242101276D22530004A63E /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAView.swift */; };
 		F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
 		F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
+		F8242106276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
+		F8242107276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -68,6 +70,7 @@
 		F82420FC276D1FBD0004A63E /* CTAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAViewModel.swift; sourceTree = "<group>"; };
 		F82420FF276D22530004A63E /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
 		F8242102276D309D0004A63E /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
+		F8242105276DA8D60004A63E /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		F839D135276CD07B00756044 /* ContextualViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewsApp.swift; sourceTree = "<group>"; };
 		F839D136276CD07B00756044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F839D137276CD07D00756044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 			children = (
 				F82420F9276D1B7E0004A63E /* CardBackground.swift */,
 				F82420FF276D22530004A63E /* CTAView.swift */,
+				F8242105276DA8D60004A63E /* IconView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -345,6 +349,7 @@
 				F82420DA276CE92B0004A63E /* ContextualCardGroupView.swift in Sources */,
 				F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */,
 				F82420DC276CE93A0004A63E /* ContextualCardView.swift in Sources */,
+				F8242106276DA8D60004A63E /* IconView.swift in Sources */,
 				F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */,
 				F82420D6276CDF890004A63E /* CardGroupViewModel.swift in Sources */,
 				F82420E8276CF0520004A63E /* SmallCardWithArrowView.swift in Sources */,
@@ -366,6 +371,7 @@
 				F82420FB276D1B7E0004A63E /* CardBackground.swift in Sources */,
 				F87A62DD276CD4840083FBE1 /* ContextualViewModel.swift in Sources */,
 				F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
+				F8242107276DA8D60004A63E /* IconView.swift in Sources */,
 				F87A62E1276CD5C50083FBE1 /* Webservice.swift in Sources */,
 				F8242101276D22530004A63E /* CTAView.swift in Sources */,
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,

@@ -31,18 +31,19 @@ struct ContextualCardGroupView: View {
     var body: some View {
         if isScrollable {
             ScrollView (.horizontal, showsIndicators: false) {
-                 HStack {
-                     ForEach(cards, id:\.uuid) { cardVM in
-                         getCardType(for: cardVM)
-//                             .padding()
-                     }
-                 }
+                drawCards()
             }.frame(height: 100)
         } else {
-            if let firstCard = cards.first {
-                getCardType(for: firstCard)
+            drawCards()
+        }
+    }
+    
+    
+    func drawCards() -> some View {
+        HStack {
+            ForEach(cards, id:\.uuid) { cardVM in
+                getCardType(for: cardVM)
             }
-            
         }
     }
     
@@ -50,7 +51,7 @@ struct ContextualCardGroupView: View {
     func getCardType(for cardVM: CardViewModel) -> AnyView {
         switch designType {
             case "HC3": return AnyView(BigDisplayCardView(cardVM))
-            case "HC1": return AnyView(SmallDisplayCardView(cardVM))
+            case "HC1": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable))
             default: return AnyView(Text("Hello"))
         }
     }
