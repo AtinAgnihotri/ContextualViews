@@ -34,6 +34,8 @@
 		F8242107276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
 		F8242109276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
 		F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
+		F824210C276DCEA50004A63E /* HC5BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5BackgroundView.swift */; };
+		F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5BackgroundView.swift */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -72,6 +74,7 @@
 		F8242102276D309D0004A63E /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
 		F8242105276DA8D60004A63E /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		F8242108276DC3B50004A63E /* HC9BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC9BackgroundView.swift; sourceTree = "<group>"; };
+		F824210B276DCEA50004A63E /* HC5BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5BackgroundView.swift; sourceTree = "<group>"; };
 		F839D135276CD07B00756044 /* ContextualViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewsApp.swift; sourceTree = "<group>"; };
 		F839D136276CD07B00756044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F839D137276CD07D00756044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 				F82420FF276D22530004A63E /* CTAView.swift */,
 				F8242105276DA8D60004A63E /* IconView.swift */,
 				F8242108276DC3B50004A63E /* HC9BackgroundView.swift */,
+				F824210B276DCEA50004A63E /* HC5BackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -358,6 +362,7 @@
 				F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */,
 				F82420DE276CEC330004A63E /* CardItems.swift in Sources */,
 				F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */,
+				F824210C276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
 				F87A62D4276CD4020083FBE1 /* Card.swift in Sources */,
 				F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
 			);
@@ -377,6 +382,7 @@
 				F8242101276D22530004A63E /* CTAView.swift in Sources */,
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
+				F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
 				F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F87A62D5276CD4020083FBE1 /* Card.swift in Sources */,
 			);

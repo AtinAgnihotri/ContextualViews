@@ -32,6 +32,10 @@ extension Image {
         self.resizable().scaledToFit()
     }
     
+    func fillInView() -> some View {
+        self.resizable().scaledToFill()
+    }
+    
     func icon(shape: IconShape = .cirlce) -> some View {
         switch shape {
         case .cirlce: return AnyView(self

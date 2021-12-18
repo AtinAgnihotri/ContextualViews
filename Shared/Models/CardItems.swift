@@ -23,6 +23,7 @@ struct CardImage: Decodable {
     let imageType: String
     let assetType: String?
     let imageUrl: String?
+    let aspectRatio: Double?
 }
 
 struct Gradient: Decodable {

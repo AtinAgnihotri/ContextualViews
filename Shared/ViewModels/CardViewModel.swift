@@ -82,6 +82,10 @@ class CardViewModel: ObservableObject {
         card.icon?.assetType != nil
     }
     
+    var bgAspectRatio: CGFloat {
+        CGFloat(card.bgImage?.aspectRatio ?? 1)
+    }
+    
     private func getFormattedString(_ formattedText: FormattedText) -> AttributedString {
         var words = formattedText.text.components(separatedBy: " ")
         let attrWords = formattedText.entities.map { $0.text }

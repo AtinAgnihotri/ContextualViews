@@ -42,7 +42,6 @@ struct HC9BackgroundView: View {
         } else {
             Image(asset)
                 .fitToView()
-            
         }
     }
 }

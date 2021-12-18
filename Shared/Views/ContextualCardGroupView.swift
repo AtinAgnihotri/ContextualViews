@@ -40,22 +40,34 @@ struct ContextualCardGroupView: View {
     
     
     func drawCards() -> some View {
-        HStack {
-            ForEach(cards, id:\.uuid) { cardVM in
-                getCardType(for: cardVM)
+//        GeometryReader { geo in
+            HStack {
+                ForEach(cards, id:\.uuid) { cardVM in
+                    getCardType(for: cardVM, width: 0)
+                }
             }
-        }
+//        }
     }
     
     
-    func getCardType(for cardVM: CardViewModel) -> AnyView {
+    func getCardType(for cardVM: CardViewModel, width: CGFloat) -> AnyView {
         switch designType {
             case "HC3": return AnyView(BigDisplayCardView(cardVM))
             case "HC1": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable))
             case "HC6": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable, hasChevron: true))
             case "HC9": return AnyView(DynamicWidthCardView(cardVM, with: cardGroupVM.height))
+            case "HC5": return AnyView(ImageCardView(cardVM, width: width - 10)
+                                        .padding(.vertical))
             default: return AnyView(GenericCardType(cardVM))
         }
+    }
+    
+    func handleImageCard(_ cardVM: CardViewModel) -> AnyView {
+        AnyView(
+            GeometryReader { geo in
+                ImageCardView(cardVM, width: geo.size.width - 10)
+            }
+        )
     }
     
     
