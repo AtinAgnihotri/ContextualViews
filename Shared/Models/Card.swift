@@ -31,4 +31,13 @@ struct CardGroup: Decodable {
     let designType: String
     let isScrollable: Bool
     let height: Double?
+    
+    init(id: Int, cards: [Card], name: String, designType: String, isScrollable: Bool, height: Double? = nil) {
+        self.id = id
+        self.cards = cards
+        self.name = name
+        self.designType = designType
+        self.isScrollable = isScrollable
+        self.height = height
+    }
 }

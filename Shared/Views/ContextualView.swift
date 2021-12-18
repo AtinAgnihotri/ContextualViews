@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ContextualView: View {
-    @ObservedObject var contextualVM = ContextualViewModel()
+    @ObservedObject var controller = ContextualViewController.shared
+    var contextualVM = ContextualViewModel()
     
     init() {
-//        UITableView.appearance().separatorStyle = .none
-//        UITableViewCell.appearance().backgroundColor = .green
-//        UITableView.appearance().backgroundColor = .green
     }
         
     var body: some View {
@@ -29,17 +27,20 @@ struct ContextualView: View {
                             .frame(minHeight: getMinHeight(for: $0))
                             .padding(.vertical, getPadding(for: $0))
                     }
-                    .shadow(radius: 25)
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
                 }
-                .edgesIgnoringSafeArea(.horizontal)
+                .shadow(radius: 25)
+                .padding(.top, 20)
+                .padding(.leading, 20)
+                .listStyle(PlainListStyle())
                 .listSeparatorStyle(style: .none)
                 .refreshable {
                     contextualVM.refresh()
                 }
                 .frame(maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.trailing)
             }
         }
         

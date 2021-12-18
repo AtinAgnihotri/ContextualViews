@@ -2,44 +2,28 @@
 //  ContextualViewModel.swift
 //  ContextualViews
 //
-//  Created by Atin Aganihotri on 17/12/21.
+//  Created by Atin Aganihotri on 18/12/21.
 //
 
 import Foundation
 
-class ContextualViewModel: ObservableObject {
+class ContextualViewModel {
+    private let controller = ContextualViewController.shared
     
-    @Published var cardGroups: [CardGroupViewModel] {
-        didSet {
-            cardGroups.forEach {
-                print($0)
-            }
-        }
+    init() {
+        print("ContextualViewModel was initialized")
+    }
+    
+    var cardGroups: [CardGroupViewModel] {
+        print("Dex", controller.cardGroups)
+        return controller.cardGroups
     }
     
     var isLoading: Bool {
-        cardGroups.isEmpty
-    }
-    
-    init() {
-        cardGroups = [CardGroupViewModel]()
-        refresh()
+        controller.cardGroups.isEmpty
     }
     
     func refresh() {
-        print("Refreshing List")
-        WebService.shared.fetchHomepageConfig { [weak self] result in
-            switch result {
-            case .success(let response):
-                
-                    self?.cardGroups = response.cardGroups.map {
-                        CardGroupViewModel($0)
-                    }
-                
-                
-            case .failure(let error):
-                print(error)
-            }
-        }
+        controller.refresh()
     }
 }

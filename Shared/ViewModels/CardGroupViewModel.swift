@@ -18,6 +18,12 @@ class CardGroupViewModel: ObservableObject {
         self.uuid = UUID()
     }
     
+    init(_ cardGroup: CardGroup, cards: [CardViewModel]) {
+        self.cardGroup = cardGroup
+        self.cards = cards
+        self.uuid = UUID()
+    }
+    
     var id: Int {
         cardGroup.id
     }
@@ -38,6 +44,9 @@ class CardGroupViewModel: ObservableObject {
         (cardGroup.height ?? 0) * Double(UIScreen.main.scale)
     }
     
+    func copyWithNewCards(cards: [CardViewModel]) -> CardGroupViewModel {
+        CardGroupViewModel(cardGroup, cards: cards)
+    }
     
 }
 

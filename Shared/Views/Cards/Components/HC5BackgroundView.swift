@@ -20,7 +20,7 @@ struct HC5BackgroundView: View {
     }
     
     var imageWidth : CGFloat {
-        UIScreen.main.bounds.width - (30 * UIScreen.main.scale)
+        UIScreen.main.bounds.width - (20 * UIScreen.main.scale)
     }
     
     var imageHeight : CGFloat {

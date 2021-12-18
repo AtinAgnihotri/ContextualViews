@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContextualCardView: View {
-    @ObservedObject var cardVM: CardViewModel
+
+   @ObservedObject var cardVM: CardViewModel
     
     init(_ cardVM: CardViewModel) {
         self.cardVM = cardVM

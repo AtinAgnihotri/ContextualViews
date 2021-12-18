@@ -35,6 +35,7 @@ struct ContextualCardGroupView: View {
             }.frame(height: 100)
         } else {
             drawCards()
+                .padding(.trailing, 20)
         }
     }
     
@@ -46,6 +47,7 @@ struct ContextualCardGroupView: View {
                     getCardType(for: cardVM, width: 0)
                 }
             }
+            
 //        }
     }
     
