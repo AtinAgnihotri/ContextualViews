@@ -19,7 +19,7 @@ class ContextualViewController: ObservableObject {
         }
     }
     @Published var isLoading = false
-    
+    @Published var didAppLaunch = true
     @Published var remindLaterCardNames: [String]
     @Published var dismissedCardNames: [String] {
         didSet {
@@ -52,12 +52,13 @@ class ContextualViewController: ObservableObject {
             switch result {
             case .success(let response):
                 self?.loadCards(from: response.cardGroups)
-                self?.isLoading = false
+                
             case .failure(let error):
                 print(error)
-                self?.isLoading = false
+//                self?.isLoading = false
             }
-            
+            self?.isLoading = false
+            self?.didAppLaunch = false
         }
     }
     

@@ -15,35 +15,28 @@ struct ContextualView: View {
     }
         
     var body: some View {
-        ZStack {
-            if contextualVM.isLoading {
-                Text("Loading . . .")
-            } else {
-                List {
-                    ForEach(contextualVM.cardGroups, id:\.uuid) {
-                        ContextualCardGroupView($0)
-                            .listRowInsets(EdgeInsets())
-                            
-                            .frame(minHeight: getMinHeight(for: $0))
-                            .padding(.vertical, getPadding(for: $0))
-                    }
+        List {
+            ForEach(contextualVM.cardGroups, id:\.uuid) {
+                ContextualCardGroupView($0)
                     .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
-                }
-                .shadow(radius: 25)
-                .padding(.top, 20)
-                .padding(.leading, 20)
-                .listStyle(PlainListStyle())
-                .listSeparatorStyle(style: .none)
-                .refreshable {
-                    contextualVM.refresh()
-                }
-                .frame(maxWidth: .infinity)
-                .edgesIgnoringSafeArea(.trailing)
+                    
+                    .frame(minHeight: getMinHeight(for: $0))
+                    .padding(.vertical, getPadding(for: $0))
             }
+            .listRowInsets(EdgeInsets())
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
         }
-        
+        .shadow(radius: 25)
+        .padding(.top, 20)
+        .padding(.leading, 20)
+        .listStyle(PlainListStyle())
+        .listSeparatorStyle(style: .none)
+        .refreshable {
+            contextualVM.refresh()
+        }
+        .frame(maxWidth: .infinity)
+        .edgesIgnoringSafeArea(.trailing)
     }
     
     func getMinHeight(for cardGroup: CardGroupViewModel) -> CGFloat {
@@ -64,7 +57,6 @@ struct ContextualView: View {
     
     func getPadding(for cardGroup: CardGroupViewModel) -> CGFloat {
         if cardGroup.height != 0 || ["HC5", "HC9"].contains(cardGroup.designType) {
-//        if cardGroup.height != 0 {
             return 10
         }
         return 0
