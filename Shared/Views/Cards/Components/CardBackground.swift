@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct CardBackground: View {
     let url: String
@@ -17,7 +18,7 @@ struct CardBackground: View {
     }
     
     var body: some View {
-        AsyncImage(url: URL(string: url)) { phase in
+        CachedAsyncImage(url: URL(string: url)) { phase in
             switch phase {
             case .empty:
                 bgColor

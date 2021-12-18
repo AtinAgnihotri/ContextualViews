@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 public enum IconShape {
     case cirlce
@@ -23,7 +24,7 @@ struct AsyncIcon: View {
     }
     
     var body: some View {
-        AsyncImage(url: URL(string: url)) { phase in
+        CachedAsyncImage(url: URL(string: url)) { phase in
             switch phase {
             case .empty:
                 Image("icon_loading")

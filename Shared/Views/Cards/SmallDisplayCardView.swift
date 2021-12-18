@@ -14,6 +14,9 @@ struct SmallDisplayCardView: CardType {
     private let hasChevron: Bool
     @Environment(\.openURL) var openURL
     
+//    let minWidth : CGFloat = UIScreen.main.bounds.width - (20 * UIScreen.main.scale)
+    
+    
     init(_ cardVM: CardViewModel, isScrollable: Bool = false, hasChevron: Bool = false) {
         self.cardVM = cardVM
         inScrollableStack = isScrollable
@@ -56,9 +59,11 @@ struct SmallDisplayCardView: CardType {
             }
         }
         .buttonStyle(.plain)
+//        .frame(minWidth: inScrollableStack ? minWidth : 0)
         .frame(maxWidth: .infinity)
         .frame(height: 60)
         .cornerRadius(10)
+        
 //        .shadow(radius: 25)
     }
     

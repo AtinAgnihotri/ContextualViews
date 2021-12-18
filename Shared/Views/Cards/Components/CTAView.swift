@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct CTAView: View {
     @ObservedObject var ctaVM: CTAViewModel
     @Environment(\.openURL) var openURL

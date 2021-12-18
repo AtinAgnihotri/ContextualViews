@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct HC5BackgroundView: View {
     private let url: String
@@ -43,7 +44,7 @@ struct HC5BackgroundView: View {
     var body: some View {
         
         if asset.isEmpty {
-            AsyncImage(url: URL(string: url)) { phase in
+            CachedAsyncImage(url: URL(string: url)) { phase in
                 switch phase {
                 case .empty:
                     Loading

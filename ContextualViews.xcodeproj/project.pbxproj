@@ -38,6 +38,7 @@
 		F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5BackgroundView.swift */; };
 		F8242111276DF6290004A63E /* ContextualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242110276DF6290004A63E /* ContextualViewModel.swift */; };
 		F8242112276DF6290004A63E /* ContextualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242110276DF6290004A63E /* ContextualViewModel.swift */; };
+		F8242115276E045A0004A63E /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = F8242114276E045A0004A63E /* CachedAsyncImage */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -95,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8242115276E045A0004A63E /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +269,9 @@
 			dependencies = (
 			);
 			name = "ContextualViews (iOS)";
+			packageProductDependencies = (
+				F8242114276E045A0004A63E /* CachedAsyncImage */,
+			);
 			productName = "ContextualViews (iOS)";
 			productReference = F839D13C276CD07D00756044 /* ContextualViews.app */;
 			productType = "com.apple.product-type.application";
@@ -315,6 +320,9 @@
 				Base,
 			);
 			mainGroup = F839D12F276CD07A00756044;
+			packageReferences = (
+				F8242113276E045A0004A63E /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */,
+			);
 			productRefGroup = F839D13D276CD07D00756044 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -660,6 +668,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8242113276E045A0004A63E /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/SwiftUI-CachedAsyncImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8242114276E045A0004A63E /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8242113276E045A0004A63E /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F839D130276CD07A00756044 /* Project object */;
 }
