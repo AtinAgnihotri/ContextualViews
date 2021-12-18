@@ -27,9 +27,19 @@ extension View {
 }
 
 extension Image {
-    func icon() -> some View {
-        self.resizable()
-            .scaledToFit()
-            .clipShape(Circle())
+    
+    func fitToView() -> some View {
+        self.resizable().scaledToFit()
+    }
+    
+    func icon(shape: IconShape = .cirlce) -> some View {
+        switch shape {
+        case .cirlce: return AnyView(self
+                              .fitToView()
+                              .clipShape(Circle()))
+        case .roundedRectancle: return AnyView(self
+                                        .fitToView()
+                                        .clipShape(RoundedRectangle(cornerRadius: 5)))
+        }
     }
 }

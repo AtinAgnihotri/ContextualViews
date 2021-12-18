@@ -30,4 +30,5 @@ struct CardGroup: Decodable {
     let name: String
     let designType: String
     let isScrollable: Bool
+    let height: Double?
 }

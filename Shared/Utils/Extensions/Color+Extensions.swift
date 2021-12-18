@@ -33,3 +33,11 @@ extension Color {
         )
     }
 }
+
+extension Color {
+    static func random() -> Color {
+        let randomColors: [Color] = [.teal, .cyan, .orange, .mint, .pink, .indigo]
+        let count = randomColors.count
+        return randomColors[Int.random(in: 0..<count)]
+    }
+}

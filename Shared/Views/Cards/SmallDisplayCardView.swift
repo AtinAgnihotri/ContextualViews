@@ -11,11 +11,13 @@ struct SmallDisplayCardView: CardType {
     
     @ObservedObject var cardVM: CardViewModel
     private let inScrollableStack: Bool
+    private let hasChevron: Bool
     @Environment(\.openURL) var openURL
     
-    init(_ cardVM: CardViewModel, isScrollable: Bool = false) {
+    init(_ cardVM: CardViewModel, isScrollable: Bool = false, hasChevron: Bool = false) {
         self.cardVM = cardVM
         inScrollableStack = isScrollable
+        self.hasChevron = hasChevron
         print("Small Card in Scrollable Stack:", cardVM.iconUrl, cardVM.hasAsset)
     }
     
@@ -26,7 +28,7 @@ struct SmallDisplayCardView: CardType {
                 cardVM.hasBgColor ? cardVM.backgroundColor : Color(hex: "#FBAF03")
             }
             HStack {
-                IconView(url: cardVM.iconUrl, asset: cardVM.assetName, hasAsset: cardVM.hasAsset)
+                IconView(url: cardVM.iconUrl, asset: cardVM.assetName, hasAsset: cardVM.hasAsset, shape: hasChevron ? .roundedRectancle : .cirlce)
                     .padding()
                 VStack (alignment: .leading) {
                     Text(cardVM.title)
@@ -40,6 +42,16 @@ struct SmallDisplayCardView: CardType {
                 }
                 if inScrollableStack {
                     Spacer(minLength: 100)
+                    if hasChevron {
+                        Image(systemName: "chevron.right")
+                            .icon()
+                            .padding()
+                    }
+                } else if hasChevron {
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .icon()
+                        .padding()
                 }
             }
         }
@@ -47,7 +59,7 @@ struct SmallDisplayCardView: CardType {
         .frame(maxWidth: .infinity)
         .frame(height: 60)
         .cornerRadius(10)
-        .shadow(radius: 25)
+//        .shadow(radius: 25)
     }
     
     func onTap() {

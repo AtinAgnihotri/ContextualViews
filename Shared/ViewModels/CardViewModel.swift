@@ -115,6 +115,10 @@ class CardViewModel: ObservableObject {
         return attrString
     }
     
+    var bgAsset: String {
+        card.bgImage?.assetType ?? ""
+    }
+    
     
     
 }

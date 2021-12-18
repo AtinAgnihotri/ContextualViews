@@ -25,7 +25,9 @@ struct ContextualView: View {
                     ForEach(contextualVM.cardGroups, id:\.uuid) {
                         ContextualCardGroupView($0)
                             .listRowInsets(EdgeInsets())
-//                            .padding(.vertical)
+                            .shadow(radius: 25)
+                            .frame(minHeight: $0.height)
+                            .padding(.vertical, $0.height == 0 ? 0 : 10)
                     }
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)

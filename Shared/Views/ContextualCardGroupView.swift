@@ -52,7 +52,9 @@ struct ContextualCardGroupView: View {
         switch designType {
             case "HC3": return AnyView(BigDisplayCardView(cardVM))
             case "HC1": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable))
-            default: return AnyView(Text("Hello"))
+            case "HC6": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable, hasChevron: true))
+            case "HC9": return AnyView(DynamicWidthCardView(cardVM, with: cardGroupVM.height))
+            default: return AnyView(GenericCardType(cardVM))
         }
     }
     

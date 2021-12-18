@@ -18,38 +18,35 @@ struct BigDisplayCardView: CardType {
     
    
     var body: some View {
-       
-            ZStack {
-                Button(action: onTap) {
-                    CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
-                }
-                HStack (alignment: .bottom) {
-                    Spacer(minLength: 0)
-                    VStack (alignment: .leading){
-                        Spacer()
-                        Text(cardVM.title)
-                            .font(Font.custom("Roboto", size: 30))
-                            .fontWeight(.semibold)
-                            .padding(.vertical)
-                            .padding(.horizontal, 10)
+        ZStack {
+            Button(action: onTap) {
+                CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
+            }
+            HStack (alignment: .bottom) {
+                Spacer(minLength: 0)
+                VStack (alignment: .leading){
+                    Spacer()
+                    Text(cardVM.title)
+                        .font(Font.custom("Roboto", size: 30))
+                        .fontWeight(.semibold)
+                        .padding(.vertical)
+                        .padding(.horizontal, 10)
 
-                        Text(cardVM.description)
-                            .padding()
-                        if (cardVM.hasCTA) {
-                            ForEach(cardVM.cta, id:\.uuid) {
-                                CTAView($0)
-                            }
+                    Text(cardVM.description)
+                        .padding()
+                    if (cardVM.hasCTA) {
+                        ForEach(cardVM.cta, id:\.uuid) {
+                            CTAView($0)
                         }
                     }
-                    Spacer(minLength: 0)
                 }
+                Spacer(minLength: 0)
             }
-        
+        }
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)
         .frame(height: 400)
         .cornerRadius(10)
-        .shadow(radius: 25)
         
     }
     

@@ -34,6 +34,10 @@ class CardGroupViewModel: ObservableObject {
         cardGroup.designType
     }
     
+    var height: Double {
+        (cardGroup.height ?? 0) * Double(UIScreen.main.scale)
+    }
+    
     
 }
 

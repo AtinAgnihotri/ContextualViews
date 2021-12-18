@@ -16,7 +16,6 @@
 		F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */; };
 		F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */; };
 		F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E5276CF0150004A63E /* ImageCardView.swift */; };
-		F82420E8276CF0520004A63E /* SmallCardWithArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */; };
 		F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */; };
 		F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EC276CF6B60004A63E /* CardViewModel.swift */; };
 		F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EE276CF7D90004A63E /* GenericCardType.swift */; };
@@ -33,6 +32,8 @@
 		F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
 		F8242106276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
 		F8242107276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
+		F8242109276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
+		F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -59,7 +60,6 @@
 		F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayCardView.swift; sourceTree = "<group>"; };
 		F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDisplayCardView.swift; sourceTree = "<group>"; };
 		F82420E5276CF0150004A63E /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
-		F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardWithArrowView.swift; sourceTree = "<group>"; };
 		F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWidthCardView.swift; sourceTree = "<group>"; };
 		F82420EC276CF6B60004A63E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		F82420EE276CF7D90004A63E /* GenericCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardType.swift; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 		F82420FF276D22530004A63E /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
 		F8242102276D309D0004A63E /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
 		F8242105276DA8D60004A63E /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		F8242108276DC3B50004A63E /* HC9BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC9BackgroundView.swift; sourceTree = "<group>"; };
 		F839D135276CD07B00756044 /* ContextualViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewsApp.swift; sourceTree = "<group>"; };
 		F839D136276CD07B00756044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F839D137276CD07D00756044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 				F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */,
 				F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */,
 				F82420E5276CF0150004A63E /* ImageCardView.swift */,
-				F82420E7276CF0520004A63E /* SmallCardWithArrowView.swift */,
 				F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */,
 				F82420EE276CF7D90004A63E /* GenericCardType.swift */,
 			);
@@ -137,6 +137,7 @@
 				F82420F9276D1B7E0004A63E /* CardBackground.swift */,
 				F82420FF276D22530004A63E /* CTAView.swift */,
 				F8242105276DA8D60004A63E /* IconView.swift */,
+				F8242108276DC3B50004A63E /* HC9BackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -339,6 +340,7 @@
 				F839D147276CD07D00756044 /* ContentView.swift in Sources */,
 				F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */,
 				F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
+				F8242109276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
 				F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */,
 				F87A62DC276CD4840083FBE1 /* ContextualViewModel.swift in Sources */,
 				F87A62E0276CD5C50083FBE1 /* Webservice.swift in Sources */,
@@ -352,7 +354,6 @@
 				F8242106276DA8D60004A63E /* IconView.swift in Sources */,
 				F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */,
 				F82420D6276CDF890004A63E /* CardGroupViewModel.swift in Sources */,
-				F82420E8276CF0520004A63E /* SmallCardWithArrowView.swift in Sources */,
 				F82420F2276D03100004A63E /* Color+Extensions.swift in Sources */,
 				F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */,
 				F82420DE276CEC330004A63E /* CardItems.swift in Sources */,
@@ -375,6 +376,7 @@
 				F87A62E1276CD5C50083FBE1 /* Webservice.swift in Sources */,
 				F8242101276D22530004A63E /* CTAView.swift in Sources */,
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,
+				F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
 				F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F87A62D5276CD4020083FBE1 /* Card.swift in Sources */,
 			);
