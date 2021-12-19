@@ -7,14 +7,43 @@
 
 import SwiftUI
 
-struct BigCardSwipeDrawer: View {
+struct SwipeDrawer: View {
+    
+    let remindLater: () -> Void
+    let dismiss: () -> Void
+    
+    init(onRemindLater: @escaping () -> Void, onDismissNow: @escaping () -> Void) {
+        remindLater = onRemindLater
+        dismiss = onDismissNow
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Spacer()
+                SwipeActionButtonView(title: "remind later", imageName: "bell_icon", action: remindLater)
+                Spacer()
+                SwipeActionButtonView(title: "dismiss now", imageName: "dismiss_icon", action: dismiss)
+                Spacer()
+            }
+            .padding()
+            Spacer()
+        }
+        .background(Color.white)
+        .cornerRadius(10)
     }
 }
 
-struct BigCardSwipeDrawer_Previews: PreviewProvider {
+struct SwipeDrawer_Previews: PreviewProvider {
+    static let remind = {
+        print("Remind Later")
+    }
+    
+    static let dismiss = {
+        print("Dismiss Now")
+    }
+    
     static var previews: some View {
-        BigCardSwipeDrawer()
+        SwipeDrawer(onRemindLater: remind, onDismissNow: dismiss)
     }
 }

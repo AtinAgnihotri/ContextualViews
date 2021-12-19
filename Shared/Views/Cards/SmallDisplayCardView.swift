@@ -21,7 +21,6 @@ struct SmallDisplayCardView: CardType {
         self.cardVM = cardVM
         inScrollableStack = isScrollable
         self.hasChevron = hasChevron
-        print("Small Card in Scrollable Stack:", cardVM.iconUrl, cardVM.hasAsset)
     }
     
    
@@ -35,13 +34,13 @@ struct SmallDisplayCardView: CardType {
                     .padding()
                 VStack (alignment: .leading) {
                     Text(cardVM.title)
-                        .font(Font.custom("Roboto", size: 14))
-                        .fontWeight(.bold)
-                        .padding(.horizontal, 10)
+                        .font(Font.custom("Roboto-Medium", size: 14))
+                        .fontWeight(.semibold)
+                        .padding(.horizontal, 5)
                     Text(cardVM.description)
-                        .font(Font.custom("Roboto", size: 12))
+                        .font(Font.custom("Roboto-Regular", size: 12))
                         .fontWeight(.thin)
-                        .padding(.horizontal, 10)
+                        .padding(.horizontal, 5)
                 }
                 if inScrollableStack {
                     Spacer(minLength: 100)

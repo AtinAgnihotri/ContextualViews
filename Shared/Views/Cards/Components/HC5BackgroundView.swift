@@ -31,13 +31,8 @@ struct HC5BackgroundView: View {
     var Loading: some View {
         HStack {
             Image("fp_icon")
-//                .resizable()
-//                .aspectRatio(aspectRatio, contentMode: .fit)
-//                .fillInView()
                 .resizable()
                 .frame(width: imageWidth, height: imageHeight)
-//                .aspectRatio(aspectRatio, contentMode: .fit)
-
         }.background(Color.random())
     }
     
@@ -50,12 +45,8 @@ struct HC5BackgroundView: View {
                     Loading
                 case .success(let image):
                     image
-//                        .aspectRatio(aspectRatio, contentMode: .fill)
-//                        .fillInView()
                         .resizable()
                         .frame(width: imageWidth, height: imageHeight)
-//                        .aspectRatio(aspectRatio, contentMode: .fit)
-
                 case .failure:
                     Loading
                 @unknown default:

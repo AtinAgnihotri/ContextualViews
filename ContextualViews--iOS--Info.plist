@@ -4,12 +4,15 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>Utils/Fonts/Roboto.ttf</string>
+		<string>Utils/Fonts/RobotoSemibold.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>
 		<string>dvfx</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<false/>
 	</dict>
 </dict>
 </plist>

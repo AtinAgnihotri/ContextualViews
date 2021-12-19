@@ -114,6 +114,21 @@ class CardViewModel: ObservableObject {
                     attrString[range].foregroundColor = Color(hex: color)
                 }
                 // MARK: TODO Set font styles
+                if let style = entity.fontStyle {
+                    if style == "bold" {
+                        attrString[range].font = .custom("Roboto-Regular", fixedSize: 14).bold()
+                    } else if style == "underline" {
+                        attrString[range].underlineStyle = .single
+                        if let color = entity.color {
+                            attrString[range].underlineColor = UIColor(cgColor: Color(hex: color).cgColor!)
+                        } else {
+                            attrString[range].underlineColor = .black
+                        }
+                    } else if style == "italic" {
+                        attrString[range].font = .custom("Roboto-Regular", fixedSize: 14).italic()
+                    }
+                }
+                
             }
         }
         return attrString

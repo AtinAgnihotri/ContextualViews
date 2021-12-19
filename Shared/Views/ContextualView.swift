@@ -31,20 +31,23 @@ struct ContextualView: View {
                 }
                 Spacer()
             }
-        } else if contextualVM.isLoading {
+        } else if contextualVM.cardGroups.isEmpty {
             VStack {
                 Spacer()
-                Text("Loading . . . ")
+                CVLoader()
                 Spacer()
             }
         } else {
             List {
-                ForEach(contextualVM.cardGroups, id:\.uuid) {
-                    ContextualCardGroupView($0)
-                        .listRowInsets(EdgeInsets())
-                        
-                        .frame(minHeight: getMinHeight(for: $0))
-                        .padding(.vertical, getPadding(for: $0))
+                ForEach(contextualVM.cardGroups, id:\.uuid) { cardGroup in
+                        ContextualCardGroupView(cardGroup)
+                            .listRowInsets(EdgeInsets())
+                            .listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+                            .frame(minHeight: getMinHeight(for: cardGroup))
+
+                            .padding(.vertical, cardGroup.designType == "HC9" ? 15 : 0)
+                            .padding(.bottom, cardGroup.designType == "HC5" ? 10 : 0)
+//                            .padding(.vertical, ["HC9", "HC5"].contains(cardGroup.designType) ? 15 : 0)
                 }
                 .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
@@ -63,9 +66,31 @@ struct ContextualView: View {
         }
     }
     
+    func getTopSpacerMinLength(for i: Int) -> CGFloat {
+        if i == 0 {
+            return 0
+        }
+        let prevDesignType = contextualVM.cardGroups[i - 1].designType
+        if ["HC5", "HC9" ].contains(prevDesignType) {
+            return 10
+        }
+        return 5
+    }
+    
+    func getBottomSpacerMinLength(for i: Int) -> CGFloat {
+        if i == contextualVM.cardGroups.count - 1 {
+            return 0
+        }
+        let nextDesignType = contextualVM.cardGroups[i + 1].designType
+        if ["HC5", "HC9" ].contains(nextDesignType) {
+            return 20
+        }
+        return 10
+    }
+    
     func getMinHeight(for cardGroup: CardGroupViewModel) -> CGFloat {
         if cardGroup.height != 0 {
-            return CGFloat(cardGroup.height)
+            return CGFloat(cardGroup.height) + 10
         } else if cardGroup.designType == "HC5" {
             var maxHeight: CGFloat = 0
             for card in cardGroup.cards {

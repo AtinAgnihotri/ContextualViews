@@ -18,16 +18,8 @@ class ContextualViewController: ObservableObject {
             }
         }
     }
-    @Published var isLoading = false
     @Published var didAppLaunch = true
-    @Published var errorMessage = "" {
-        didSet {
-            print(errorMessage)
-            print(isLoading)
-            isLoading = false
-            print(isLoading)
-        }
-    }
+    @Published var errorMessage = ""
     @Published var remindLaterCardNames: [String]
     @Published var dismissedCardNames: [String] {
         didSet {
@@ -56,7 +48,6 @@ class ContextualViewController: ObservableObject {
     
     func refresh() {
         errorMessage = ""
-        isLoading = true
         WebService.shared.fetchHomepageConfig { [weak self] result in
             switch result {
             case .success(let response):
@@ -66,7 +57,6 @@ class ContextualViewController: ObservableObject {
                 print(error)
                 self?.errorMessage = self?.getErrorMessage(for: error) ?? "Oops! Something went wrong.\nPlease try again. Just swipe from the top 👆"
             }
-            self?.isLoading = false
             self?.didAppLaunch = false
         }
     }

@@ -23,19 +23,7 @@ struct BigDisplayCardView: CardType {
    
     var body: some View {
         ZStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    Spacer()
-                    SwipeActionButtonView(title: "remind later", imageName: "bell_icon", action: remindLater)
-                    Spacer()
-                    SwipeActionButtonView(title: "dismiss now", imageName: "dismiss_icon", action: dismiss)
-                    Spacer()
-                }
-                .padding()
-                Spacer()
-            }
-            .background(Color.white)
-            .cornerRadius(10)
+            SwipeDrawer(onRemindLater: remindLater, onDismissNow: dismiss)
             ZStack {
                 CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
                 .onTapGesture {
@@ -45,13 +33,12 @@ struct BigDisplayCardView: CardType {
                         onTap()
                     }
                 }
-                
                 HStack (alignment: .bottom) {
                     Spacer(minLength: 0)
                     VStack (alignment: .leading){
                         Spacer()
                         Text(cardVM.title)
-                            .font(Font.custom("Roboto", size: 30))
+                            .font(Font.custom("Roboto-Regular", size: 30))
                             .fontWeight(.semibold)
                             .padding(.vertical)
                             .padding(.horizontal, 10)
@@ -68,13 +55,13 @@ struct BigDisplayCardView: CardType {
                 }
             }
             .offset(x: swipeOffset, y: 0)
-            
         }
         .animation(.easeInOut(duration: 0.5), value: swipeOffset)
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)
         .frame(height: 400)
         .cornerRadius(10)
+        .padding(.vertical, 10)
         .transition(.slide)
         .onLongPressGesture {
             swipeOffset = swipeOffset == 0 ? offsetAmount : 0

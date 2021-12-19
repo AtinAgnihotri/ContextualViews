@@ -71,8 +71,3 @@ struct IconView: View {
     }
 }
 
-//struct IconView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        IconView()
-//    }
-//}

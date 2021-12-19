@@ -15,7 +15,6 @@ class ContextualViewModel {
     }
     
     var cardGroups: [CardGroupViewModel] {
-        print("Dex", controller.cardGroups)
         return controller.cardGroups
     }
     

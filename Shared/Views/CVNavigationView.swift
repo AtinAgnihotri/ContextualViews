@@ -11,7 +11,7 @@ struct CVNavigationView: View {
     @ObservedObject var controller = ContextualViewController.shared
     var body: some View {
         if controller.didAppLaunch {
-            Text("Loading . . .")
+            CVLoader()
         } else {
             VStack {
                 CVNavBar()

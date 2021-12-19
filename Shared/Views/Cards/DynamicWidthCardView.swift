@@ -24,17 +24,13 @@ struct DynamicWidthCardView: CardType {
     }
     
     var body: some View {
-        VStack {
-            Spacer()
-            Button(action: onTap) {
-                HC9BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset)
-            }
-            .buttonStyle(.plain)
-            .frame(maxWidth: .infinity)
-            .frame(height: cardHeight)
-            .cornerRadius(10)
-            Spacer()
+        Button(action: onTap) {
+            HC9BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset)
         }
+        .buttonStyle(.plain)
+        .frame(maxWidth: .infinity)
+        .frame(height: cardHeight)
+        .cornerRadius(10)
     }
     
     func onTap() {

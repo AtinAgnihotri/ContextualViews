@@ -23,21 +23,14 @@ struct ImageCardView: CardType {
     }
     
     var body: some View {
-//        VStack {
-//            Spacer()
-            Button(action: onTap) {
-                HC5BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset, aspectRatio: cardVM.bgAspectRatio)
-            }
-            .buttonStyle(.plain)
-            .frame(maxWidth: .infinity)
-            .frame(alignment: .leading)
-            .cornerRadius(10)
-//            .padding(.vertical, 10)
-//            Spacer()
-//        }
+        Button(action: onTap) {
+            HC5BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset, aspectRatio: cardVM.bgAspectRatio)
+        }
+        .buttonStyle(.plain)
+        .frame(maxWidth: .infinity)
+        .frame(alignment: .leading)
+        .cornerRadius(10)
         .frame(minHeight: minHeight)
-//        .padding(.vertical)
-        
     }
     
     func onTap() {
@@ -48,9 +41,3 @@ struct ImageCardView: CardType {
         }
     }
 }
-
-//struct ImageCard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ImageCardView()
-//    }
-//}
