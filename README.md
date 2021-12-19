@@ -6,6 +6,8 @@ The belle of the ball here is ContextView which is a resuable component that you
 
 It uses the response fetched from an API to dynamically create and display a list of cards, the idea being, to used this to dynamically card list / homepage for a user.
 
+The App is implemented in MVVM-C pattern
+
 ### 🍎 Tech Used:
 
 - 🍎 SwiftUI
