@@ -16,6 +16,9 @@ class ContextController: ObservableObject {
     @Published var errorMessage = ""
     @Published var remindLaterCardNames: [String]
     @Published var dismissedCardNames: [String] {
+        /*
+         Save the dismissed cards in UserDefs, so we can know which ones to filter out on subsequent launches
+         */
         didSet {
             if let data = try? JSONEncoder().encode(dismissedCardNames) {
                 UserDefaults.standard.set(data, forKey: Constants.UserDefaultKeys.DISMISSED_CARDS)
@@ -49,7 +52,7 @@ class ContextController: ObservableObject {
                 self?.errorMessage = ""
             case .failure(let error):
                 print(error)
-                self?.errorMessage = self?.getErrorMessage(for: error) ?? "Oops! Something went wrong.\nPlease try again. Just swipe from the top 👆"
+                self?.errorMessage = self?.getErrorMessage(for: error) ?? "Oops! Something went wrong.\nPlease try again."
             }
             self?.didAppLaunch = false
         }

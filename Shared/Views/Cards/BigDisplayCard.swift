@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BigDisplayCardView: CardType {
+struct BigDisplayCard: View {
     
     @ObservedObject var cardVM: CardViewModel
     @State private var swipeOffset: CGFloat = 0
@@ -25,7 +25,7 @@ struct BigDisplayCardView: CardType {
         ZStack {
             SwipeDrawer(onRemindLater: remindLater, onDismissNow: dismiss)
             ZStack {
-                CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
+                HC3Background(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
                 .onTapGesture {
                     if swipeOffset != 0 {
                         swipeOffset = 0
@@ -47,7 +47,7 @@ struct BigDisplayCardView: CardType {
                             .padding()
                         if (cardVM.hasCTA) {
                             ForEach(cardVM.cta, id:\.uuid) {
-                                CTAView($0)
+                                CTAButton($0)
                             }
                         }
                     }
@@ -61,7 +61,6 @@ struct BigDisplayCardView: CardType {
         .frame(maxWidth: .infinity)
         .frame(height: 400)
         .cornerRadius(10)
-        .padding(.vertical, 10)
         .transition(.slide)
         .onLongPressGesture {
             swipeOffset = swipeOffset == 0 ? offsetAmount : 0
@@ -78,11 +77,11 @@ struct BigDisplayCardView: CardType {
     }
     
     func remindLater() {
-        ContextualViewController.shared.remindLater(cardVM.name)
+        ContextController.shared.remindLater(cardVM.name)
     }
     
     func dismiss() {
-        ContextualViewController.shared.dismiss(cardVM.name)
+        ContextController.shared.dismiss(cardVM.name)
     }
 }
 

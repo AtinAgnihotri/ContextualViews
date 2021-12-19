@@ -46,7 +46,7 @@ struct AsyncIcon: View {
     }
 }
 
-struct IconView: View {
+struct SmallDisplayIcon: View {
     
     private let url: String
     private let hasAsset: Bool

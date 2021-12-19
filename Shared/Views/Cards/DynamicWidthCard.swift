@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DynamicWidthCardView: CardType {
+struct DynamicWidthCard: View {
     
     @ObservedObject var cardVM: CardViewModel
     private let height: Double
@@ -25,7 +25,7 @@ struct DynamicWidthCardView: CardType {
     
     var body: some View {
         Button(action: onTap) {
-            HC9BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset)
+            HC9Background(url: cardVM.bgImageUrl, asset: cardVM.bgAsset)
         }
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)

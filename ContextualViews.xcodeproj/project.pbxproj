@@ -12,29 +12,29 @@
 		F82420D8276CDFFF0004A63E /* CardDesignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420D7276CDFFF0004A63E /* CardDesignType.swift */; };
 		F82420DA276CE92B0004A63E /* ContextualCardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420D9276CE92B0004A63E /* ContextualCardGroupView.swift */; };
 		F82420DE276CEC330004A63E /* CardItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420DD276CEC330004A63E /* CardItems.swift */; };
-		F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */; };
-		F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */; };
+		F82420E2276CEFBD0004A63E /* SmallDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E1276CEFBD0004A63E /* SmallDisplayCard.swift */; };
+		F82420E4276CEFCD0004A63E /* BigDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E3276CEFCD0004A63E /* BigDisplayCard.swift */; };
 		F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E5276CF0150004A63E /* ImageCardView.swift */; };
-		F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */; };
+		F82420EA276CF0670004A63E /* DynamicWidthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420E9276CF0670004A63E /* DynamicWidthCard.swift */; };
 		F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EC276CF6B60004A63E /* CardViewModel.swift */; };
-		F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EE276CF7D90004A63E /* GenericCardType.swift */; };
+		F82420EF276CF7D90004A63E /* GenericCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420EE276CF7D90004A63E /* GenericCard.swift */; };
 		F82420F2276D03100004A63E /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F1276D03100004A63E /* Color+Extensions.swift */; };
 		F82420F6276D0CFF0004A63E /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F82420F5276D0CFF0004A63E /* Roboto.ttf */; };
 		F82420F7276D0CFF0004A63E /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F82420F5276D0CFF0004A63E /* Roboto.ttf */; };
-		F82420FA276D1B7E0004A63E /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* CardBackground.swift */; };
-		F82420FB276D1B7E0004A63E /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* CardBackground.swift */; };
+		F82420FA276D1B7E0004A63E /* HC3Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* HC3Background.swift */; };
+		F82420FB276D1B7E0004A63E /* HC3Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420F9276D1B7E0004A63E /* HC3Background.swift */; };
 		F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FC276D1FBD0004A63E /* CTAViewModel.swift */; };
 		F82420FE276D1FBD0004A63E /* CTAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FC276D1FBD0004A63E /* CTAViewModel.swift */; };
-		F8242100276D22530004A63E /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAView.swift */; };
-		F8242101276D22530004A63E /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAView.swift */; };
+		F8242100276D22530004A63E /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAButton.swift */; };
+		F8242101276D22530004A63E /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82420FF276D22530004A63E /* CTAButton.swift */; };
 		F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
 		F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242102276D309D0004A63E /* CustomViewModifiers.swift */; };
-		F8242106276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
-		F8242107276DA8D60004A63E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* IconView.swift */; };
-		F8242109276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
-		F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9BackgroundView.swift */; };
-		F824210C276DCEA50004A63E /* HC5BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5BackgroundView.swift */; };
-		F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5BackgroundView.swift */; };
+		F8242106276DA8D60004A63E /* SmallDisplayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* SmallDisplayIcon.swift */; };
+		F8242107276DA8D60004A63E /* SmallDisplayIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242105276DA8D60004A63E /* SmallDisplayIcon.swift */; };
+		F8242109276DC3B50004A63E /* HC9Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9Background.swift */; };
+		F824210A276DC3B50004A63E /* HC9Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242108276DC3B50004A63E /* HC9Background.swift */; };
+		F824210C276DCEA50004A63E /* HC5Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5Background.swift */; };
+		F824210D276DCEA50004A63E /* HC5Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824210B276DCEA50004A63E /* HC5Background.swift */; };
 		F8242111276DF6290004A63E /* ContextualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242110276DF6290004A63E /* ContextualViewModel.swift */; };
 		F8242112276DF6290004A63E /* ContextualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242110276DF6290004A63E /* ContextualViewModel.swift */; };
 		F8242115276E045A0004A63E /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = F8242114276E045A0004A63E /* CachedAsyncImage */; };
@@ -42,8 +42,8 @@
 		F8242118276E091F0004A63E /* CVNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242116276E091F0004A63E /* CVNavBar.swift */; };
 		F824211D276E0A460004A63E /* CVNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211C276E0A460004A63E /* CVNavigationView.swift */; };
 		F824211E276E0A460004A63E /* CVNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211C276E0A460004A63E /* CVNavigationView.swift */; };
-		F8242120276F27450004A63E /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeActionButtonView.swift */; };
-		F8242121276F27450004A63E /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeActionButtonView.swift */; };
+		F8242120276F27450004A63E /* SwipeDrawerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeDrawerButton.swift */; };
+		F8242121276F27450004A63E /* SwipeDrawerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeDrawerButton.swift */; };
 		F8242123276F35B80004A63E /* CVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242122276F35B80004A63E /* CVLoader.swift */; };
 		F8242124276F35B80004A63E /* CVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242122276F35B80004A63E /* CVLoader.swift */; };
 		F8242126276F3EFC0004A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8242125276F3EFC0004A63E /* LaunchScreen.storyboard */; };
@@ -62,8 +62,8 @@
 		F87A62D5276CD4020083FBE1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62D3276CD4020083FBE1 /* Card.swift */; };
 		F87A62D8276CD43A0083FBE1 /* ContextualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62D7276CD43A0083FBE1 /* ContextualView.swift */; };
 		F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62D7276CD43A0083FBE1 /* ContextualView.swift */; };
-		F87A62DC276CD4840083FBE1 /* ContextualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DB276CD4840083FBE1 /* ContextualViewController.swift */; };
-		F87A62DD276CD4840083FBE1 /* ContextualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DB276CD4840083FBE1 /* ContextualViewController.swift */; };
+		F87A62DC276CD4840083FBE1 /* ContextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DB276CD4840083FBE1 /* ContextController.swift */; };
+		F87A62DD276CD4840083FBE1 /* ContextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DB276CD4840083FBE1 /* ContextController.swift */; };
 		F87A62E0276CD5C50083FBE1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DF276CD5C50083FBE1 /* Webservice.swift */; };
 		F87A62E1276CD5C50083FBE1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A62DF276CD5C50083FBE1 /* Webservice.swift */; };
 /* End PBXBuildFile section */
@@ -74,26 +74,26 @@
 		F82420D7276CDFFF0004A63E /* CardDesignType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDesignType.swift; sourceTree = "<group>"; };
 		F82420D9276CE92B0004A63E /* ContextualCardGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualCardGroupView.swift; sourceTree = "<group>"; };
 		F82420DD276CEC330004A63E /* CardItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItems.swift; sourceTree = "<group>"; };
-		F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayCardView.swift; sourceTree = "<group>"; };
-		F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDisplayCardView.swift; sourceTree = "<group>"; };
+		F82420E1276CEFBD0004A63E /* SmallDisplayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayCard.swift; sourceTree = "<group>"; };
+		F82420E3276CEFCD0004A63E /* BigDisplayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDisplayCard.swift; sourceTree = "<group>"; };
 		F82420E5276CF0150004A63E /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
-		F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWidthCardView.swift; sourceTree = "<group>"; };
+		F82420E9276CF0670004A63E /* DynamicWidthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWidthCard.swift; sourceTree = "<group>"; };
 		F82420EC276CF6B60004A63E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
-		F82420EE276CF7D90004A63E /* GenericCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardType.swift; sourceTree = "<group>"; };
+		F82420EE276CF7D90004A63E /* GenericCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCard.swift; sourceTree = "<group>"; };
 		F82420F1276D03100004A63E /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		F82420F3276D0AF40004A63E /* ContextualViews--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ContextualViews--iOS--Info.plist"; sourceTree = "<group>"; };
 		F82420F5276D0CFF0004A63E /* Roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Roboto.ttf; sourceTree = "<group>"; };
-		F82420F9276D1B7E0004A63E /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
+		F82420F9276D1B7E0004A63E /* HC3Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC3Background.swift; sourceTree = "<group>"; };
 		F82420FC276D1FBD0004A63E /* CTAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAViewModel.swift; sourceTree = "<group>"; };
-		F82420FF276D22530004A63E /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
+		F82420FF276D22530004A63E /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		F8242102276D309D0004A63E /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
-		F8242105276DA8D60004A63E /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
-		F8242108276DC3B50004A63E /* HC9BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC9BackgroundView.swift; sourceTree = "<group>"; };
-		F824210B276DCEA50004A63E /* HC5BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5BackgroundView.swift; sourceTree = "<group>"; };
+		F8242105276DA8D60004A63E /* SmallDisplayIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayIcon.swift; sourceTree = "<group>"; };
+		F8242108276DC3B50004A63E /* HC9Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC9Background.swift; sourceTree = "<group>"; };
+		F824210B276DCEA50004A63E /* HC5Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5Background.swift; sourceTree = "<group>"; };
 		F8242110276DF6290004A63E /* ContextualViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewModel.swift; sourceTree = "<group>"; };
 		F8242116276E091F0004A63E /* CVNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVNavBar.swift; sourceTree = "<group>"; };
 		F824211C276E0A460004A63E /* CVNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVNavigationView.swift; sourceTree = "<group>"; };
-		F824211F276F27450004A63E /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
+		F824211F276F27450004A63E /* SwipeDrawerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDrawerButton.swift; sourceTree = "<group>"; };
 		F8242122276F35B80004A63E /* CVLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLoader.swift; sourceTree = "<group>"; };
 		F8242125276F3EFC0004A63E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8242128276F506B0004A63E /* RobotoSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RobotoSemibold.ttf; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		F839D144276CD07D00756044 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F87A62D3276CD4020083FBE1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F87A62D7276CD43A0083FBE1 /* ContextualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualView.swift; sourceTree = "<group>"; };
-		F87A62DB276CD4840083FBE1 /* ContextualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewController.swift; sourceTree = "<group>"; };
+		F87A62DB276CD4840083FBE1 /* ContextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextController.swift; sourceTree = "<group>"; };
 		F87A62DF276CD5C50083FBE1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,11 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				F82420F8276D1B6E0004A63E /* Components */,
-				F82420E1276CEFBD0004A63E /* SmallDisplayCardView.swift */,
-				F82420E3276CEFCD0004A63E /* BigDisplayCardView.swift */,
+				F82420E1276CEFBD0004A63E /* SmallDisplayCard.swift */,
+				F82420E3276CEFCD0004A63E /* BigDisplayCard.swift */,
 				F82420E5276CF0150004A63E /* ImageCardView.swift */,
-				F82420E9276CF0670004A63E /* DynamicWidthCardView.swift */,
-				F82420EE276CF7D90004A63E /* GenericCardType.swift */,
+				F82420E9276CF0670004A63E /* DynamicWidthCard.swift */,
+				F82420EE276CF7D90004A63E /* GenericCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -163,12 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				F8242116276E091F0004A63E /* CVNavBar.swift */,
-				F82420F9276D1B7E0004A63E /* CardBackground.swift */,
-				F82420FF276D22530004A63E /* CTAView.swift */,
-				F8242105276DA8D60004A63E /* IconView.swift */,
-				F8242108276DC3B50004A63E /* HC9BackgroundView.swift */,
-				F824210B276DCEA50004A63E /* HC5BackgroundView.swift */,
-				F824211F276F27450004A63E /* SwipeActionButtonView.swift */,
+				F82420F9276D1B7E0004A63E /* HC3Background.swift */,
+				F82420FF276D22530004A63E /* CTAButton.swift */,
+				F8242105276DA8D60004A63E /* SmallDisplayIcon.swift */,
+				F8242108276DC3B50004A63E /* HC9Background.swift */,
+				F824210B276DCEA50004A63E /* HC5Background.swift */,
+				F824211F276F27450004A63E /* SwipeDrawerButton.swift */,
 				F8242122276F35B80004A63E /* CVLoader.swift */,
 				F824212B276F61E30004A63E /* SwipeDrawer.swift */,
 			);
@@ -178,7 +178,7 @@
 		F824210F276DF5A80004A63E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F87A62DB276CD4840083FBE1 /* ContextualViewController.swift */,
+				F87A62DB276CD4840083FBE1 /* ContextController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,22 +390,22 @@
 			files = (
 				F82420D8276CDFFF0004A63E /* CardDesignType.swift in Sources */,
 				F8242123276F35B80004A63E /* CVLoader.swift in Sources */,
-				F8242100276D22530004A63E /* CTAView.swift in Sources */,
+				F8242100276D22530004A63E /* CTAButton.swift in Sources */,
 				F839D147276CD07D00756044 /* ContentView.swift in Sources */,
-				F82420EF276CF7D90004A63E /* GenericCardType.swift in Sources */,
+				F82420EF276CF7D90004A63E /* GenericCard.swift in Sources */,
 				F8242103276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
-				F8242109276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
-				F82420E4276CEFCD0004A63E /* BigDisplayCardView.swift in Sources */,
+				F8242109276DC3B50004A63E /* HC9Background.swift in Sources */,
+				F82420E4276CEFCD0004A63E /* BigDisplayCard.swift in Sources */,
 				F8242111276DF6290004A63E /* ContextualViewModel.swift in Sources */,
-				F87A62DC276CD4840083FBE1 /* ContextualViewController.swift in Sources */,
+				F87A62DC276CD4840083FBE1 /* ContextController.swift in Sources */,
 				F87A62E0276CD5C50083FBE1 /* Webservice.swift in Sources */,
 				F87A62D8276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F82420D4276CDBF10004A63E /* Constants.swift in Sources */,
-				F82420FA276D1B7E0004A63E /* CardBackground.swift in Sources */,
+				F82420FA276D1B7E0004A63E /* HC3Background.swift in Sources */,
 				F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F82420DA276CE92B0004A63E /* ContextualCardGroupView.swift in Sources */,
-				F82420EA276CF0670004A63E /* DynamicWidthCardView.swift in Sources */,
-				F8242106276DA8D60004A63E /* IconView.swift in Sources */,
+				F82420EA276CF0670004A63E /* DynamicWidthCard.swift in Sources */,
+				F8242106276DA8D60004A63E /* SmallDisplayIcon.swift in Sources */,
 				F82420E6276CF0150004A63E /* ImageCardView.swift in Sources */,
 				F82420D6276CDF890004A63E /* CardGroupViewModel.swift in Sources */,
 				F82420F2276D03100004A63E /* Color+Extensions.swift in Sources */,
@@ -414,9 +414,9 @@
 				F82420ED276CF6B60004A63E /* CardViewModel.swift in Sources */,
 				F824211D276E0A460004A63E /* CVNavigationView.swift in Sources */,
 				F82420DE276CEC330004A63E /* CardItems.swift in Sources */,
-				F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */,
-				F824210C276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
-				F8242120276F27450004A63E /* SwipeActionButtonView.swift in Sources */,
+				F82420E2276CEFBD0004A63E /* SmallDisplayCard.swift in Sources */,
+				F824210C276DCEA50004A63E /* HC5Background.swift in Sources */,
+				F8242120276F27450004A63E /* SwipeDrawerButton.swift in Sources */,
 				F87A62D4276CD4020083FBE1 /* Card.swift in Sources */,
 				F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
 			);
@@ -428,21 +428,21 @@
 			files = (
 				F839D148276CD07D00756044 /* ContentView.swift in Sources */,
 				F82420FE276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
-				F82420FB276D1B7E0004A63E /* CardBackground.swift in Sources */,
-				F87A62DD276CD4840083FBE1 /* ContextualViewController.swift in Sources */,
+				F82420FB276D1B7E0004A63E /* HC3Background.swift in Sources */,
+				F87A62DD276CD4840083FBE1 /* ContextController.swift in Sources */,
 				F8242104276D309D0004A63E /* CustomViewModifiers.swift in Sources */,
-				F8242107276DA8D60004A63E /* IconView.swift in Sources */,
+				F8242107276DA8D60004A63E /* SmallDisplayIcon.swift in Sources */,
 				F8242118276E091F0004A63E /* CVNavBar.swift in Sources */,
 				F87A62E1276CD5C50083FBE1 /* Webservice.swift in Sources */,
 				F8242112276DF6290004A63E /* ContextualViewModel.swift in Sources */,
-				F8242101276D22530004A63E /* CTAView.swift in Sources */,
+				F8242101276D22530004A63E /* CTAButton.swift in Sources */,
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F824211E276E0A460004A63E /* CVNavigationView.swift in Sources */,
-				F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
+				F824210A276DC3B50004A63E /* HC9Background.swift in Sources */,
 				F824212D276F61E30004A63E /* SwipeDrawer.swift in Sources */,
 				F8242124276F35B80004A63E /* CVLoader.swift in Sources */,
-				F8242121276F27450004A63E /* SwipeActionButtonView.swift in Sources */,
-				F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
+				F8242121276F27450004A63E /* SwipeDrawerButton.swift in Sources */,
+				F824210D276DCEA50004A63E /* HC5Background.swift in Sources */,
 				F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F87A62D5276CD4020083FBE1 /* Card.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SmallDisplayCardView: CardType {
+struct SmallDisplayCard: View {
     
     @ObservedObject var cardVM: CardViewModel
     private let inScrollableStack: Bool
@@ -30,7 +30,7 @@ struct SmallDisplayCardView: CardType {
                 cardVM.hasBgColor ? cardVM.backgroundColor : Color(hex: "#FBAF03")
             }
             HStack {
-                IconView(url: cardVM.iconUrl, asset: cardVM.assetName, hasAsset: cardVM.hasAsset, shape: hasChevron ? .roundedRectancle : .cirlce)
+                SmallDisplayIcon(url: cardVM.iconUrl, asset: cardVM.assetName, hasAsset: cardVM.hasAsset, shape: hasChevron ? .roundedRectancle : .cirlce)
                     .padding()
                 VStack (alignment: .leading) {
                     Text(cardVM.title)

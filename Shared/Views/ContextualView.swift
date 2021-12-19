@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContextualView: View {
-    @ObservedObject var controller = ContextualViewController.shared
+    @ObservedObject var controller = ContextController.shared
     var contextualVM = ContextualViewModel()
     
     init() {
@@ -44,10 +44,7 @@ struct ContextualView: View {
                             .listRowInsets(EdgeInsets())
                             .listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                             .frame(minHeight: getMinHeight(for: cardGroup))
-
-                            .padding(.vertical, cardGroup.designType == "HC9" ? 15 : 0)
-                            .padding(.bottom, cardGroup.designType == "HC5" ? 10 : 0)
-//                            .padding(.vertical, ["HC9", "HC5"].contains(cardGroup.designType) ? 15 : 0)
+                            .padding(.vertical, 10)
                 }
                 .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
@@ -66,31 +63,9 @@ struct ContextualView: View {
         }
     }
     
-    func getTopSpacerMinLength(for i: Int) -> CGFloat {
-        if i == 0 {
-            return 0
-        }
-        let prevDesignType = contextualVM.cardGroups[i - 1].designType
-        if ["HC5", "HC9" ].contains(prevDesignType) {
-            return 10
-        }
-        return 5
-    }
-    
-    func getBottomSpacerMinLength(for i: Int) -> CGFloat {
-        if i == contextualVM.cardGroups.count - 1 {
-            return 0
-        }
-        let nextDesignType = contextualVM.cardGroups[i + 1].designType
-        if ["HC5", "HC9" ].contains(nextDesignType) {
-            return 20
-        }
-        return 10
-    }
-    
     func getMinHeight(for cardGroup: CardGroupViewModel) -> CGFloat {
         if cardGroup.height != 0 {
-            return CGFloat(cardGroup.height) + 10
+            return CGFloat(cardGroup.height)
         } else if cardGroup.designType == "HC5" {
             var maxHeight: CGFloat = 0
             for card in cardGroup.cards {
@@ -100,13 +75,6 @@ struct ContextualView: View {
                 }
             }
             return maxHeight
-        }
-        return 0
-    }
-    
-    func getPadding(for cardGroup: CardGroupViewModel) -> CGFloat {
-        if cardGroup.height != 0 || ["HC5", "HC9"].contains(cardGroup.designType) {
-            return 10
         }
         return 0
     }

@@ -21,9 +21,9 @@ struct SwipeDrawer: View {
         HStack {
             VStack(alignment: .leading) {
                 Spacer()
-                SwipeActionButtonView(title: "remind later", imageName: "bell_icon", action: remindLater)
+                SwipeDrawerButton(title: "remind later", imageName: "bell_icon", action: remindLater)
                 Spacer()
-                SwipeActionButtonView(title: "dismiss now", imageName: "dismiss_icon", action: dismiss)
+                SwipeDrawerButton(title: "dismiss now", imageName: "dismiss_icon", action: dismiss)
                 Spacer()
             }
             .padding()

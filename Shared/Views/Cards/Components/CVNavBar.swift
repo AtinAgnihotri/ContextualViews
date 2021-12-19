@@ -11,10 +11,11 @@ struct CVNavBar: View {
     var body: some View {
         HStack {
             Text("ContextualViews")
-                .font(Font.custom("Roboto", size: 20))
+                .font(Font.custom("Roboto-Regular", size: 20).bold())
                 .fontWeight(.bold)
             Image("fp_icon")
-        }.background(Color.white)
+        }
+        .background(Color.white)
     }
 }
 

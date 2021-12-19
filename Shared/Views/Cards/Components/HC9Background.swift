@@ -8,7 +8,7 @@
 import SwiftUI
 import CachedAsyncImage
 
-struct HC9BackgroundView: View {
+struct HC9Background: View {
     private let url: String
     private let asset: String
     

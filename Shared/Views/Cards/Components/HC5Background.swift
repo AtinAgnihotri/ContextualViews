@@ -8,7 +8,7 @@
 import SwiftUI
 import CachedAsyncImage
 
-struct HC5BackgroundView: View {
+struct HC5Background: View {
     private let url: String
     private let asset: String
     private let aspectRatio: CGFloat

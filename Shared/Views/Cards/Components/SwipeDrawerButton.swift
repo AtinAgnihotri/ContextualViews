@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwipeActionButtonView: View {
+struct SwipeDrawerButton: View {
     
     let action: () -> Void
     let imageName: String
@@ -38,7 +38,7 @@ struct SwipeActionButtonView: View {
 
 struct SwipeActionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        SwipeActionButtonView(title: "Context Views", imageName: "fp_icon") {
+        SwipeDrawerButton(title: "Context Views", imageName: "fp_icon") {
             print("Hello")
         }
     }

@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-protocol CardType: View {
-    
-}
-
-struct GenericCardType: CardType {
+struct GenericCard: View {
     @ObservedObject var cardVM: CardViewModel
+    
     init(_ cardVM: CardViewModel) {
         self.cardVM = cardVM
     }
+    
     var body: some View {
         Text(cardVM.name)
     }

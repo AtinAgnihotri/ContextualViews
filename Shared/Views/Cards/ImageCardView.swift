@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ImageCardView: CardType {
+struct ImageCardView: View {
     @ObservedObject var cardVM: CardViewModel
     @Environment(\.openURL) var openURL
-    private let width: CGFloat
     
     
-    init(_ cardVM: CardViewModel, width: CGFloat) {
+    
+    init(_ cardVM: CardViewModel) {
         self.cardVM = cardVM
-        self.width = width
+        
     }
     
     var minHeight: CGFloat {
@@ -24,7 +24,7 @@ struct ImageCardView: CardType {
     
     var body: some View {
         Button(action: onTap) {
-            HC5BackgroundView(url: cardVM.bgImageUrl, asset: cardVM.bgAsset, aspectRatio: cardVM.bgAspectRatio)
+            HC5Background(url: cardVM.bgImageUrl, asset: cardVM.bgAsset, aspectRatio: cardVM.bgAspectRatio)
         }
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)

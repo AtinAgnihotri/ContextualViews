@@ -8,7 +8,7 @@
 import Foundation
 
 class ContextualViewModel {
-    private let controller = ContextualViewController.shared
+    private let controller = ContextController.shared
     
     init() {
         print("ContextualViewModel was initialized")

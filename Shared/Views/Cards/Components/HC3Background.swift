@@ -8,7 +8,7 @@
 import SwiftUI
 import CachedAsyncImage
 
-struct CardBackground: View {
+struct HC3Background: View {
     let url: String
     let bgColor: Color
     

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CVNavigationView: View {
-    @ObservedObject var controller = ContextualViewController.shared
+    @ObservedObject var controller = ContextController.shared
     var body: some View {
         if controller.didAppLaunch {
             CVLoader()

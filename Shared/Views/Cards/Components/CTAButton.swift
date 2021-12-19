@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CTAView: View {
+struct CTAButton: View {
     @ObservedObject var ctaVM: CTAViewModel
     @Environment(\.openURL) var openURL
     

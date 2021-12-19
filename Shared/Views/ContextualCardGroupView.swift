@@ -32,39 +32,30 @@ struct ContextualCardGroupView: View {
         if isScrollable {
             ScrollView (.horizontal, showsIndicators: false) {
                 drawCards()
-            }.frame(height: 100)
+            }
+            .frame(maxHeight: cardGroupVM.height == 0 ? .infinity : cardGroupVM.height)
         } else {
             drawCards()
                 .padding(.trailing, 20)
         }
     }
     
-    
     func drawCards() -> some View {
-    
-            HStack {
-                ForEach(cards, id:\.uuid) { cardVM in
-                    getCardType(for: cardVM, width: 0)
-                }
+        HStack {
+            ForEach(cards, id:\.uuid) { cardVM in
+                getCardType(for: cardVM)
             }
-            
-            
+        }
     }
     
-    func getVerticalPading(for designType: String) -> CGFloat {
-        return designType == "HC9" ? 100 : 0
-    }
-    
-    
-    func getCardType(for cardVM: CardViewModel, width: CGFloat) -> AnyView {
+    func getCardType(for cardVM: CardViewModel) -> AnyView {
         switch designType {
-            case "HC3": return AnyView(BigDisplayCardView(cardVM))
-            case "HC1": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable))
-            case "HC6": return AnyView(SmallDisplayCardView(cardVM, isScrollable: isScrollable, hasChevron: true))
-            case "HC9": return AnyView(DynamicWidthCardView(cardVM, with: cardGroupVM.height).padding(.vertical))
-            case "HC5": return AnyView(ImageCardView(cardVM, width: width - 10))
-//                                        .padding(.vertical))
-            default: return AnyView(GenericCardType(cardVM))
+            case "HC3": return AnyView(BigDisplayCard(cardVM))
+            case "HC1": return AnyView(SmallDisplayCard(cardVM, isScrollable: isScrollable))
+            case "HC6": return AnyView(SmallDisplayCard(cardVM, isScrollable: isScrollable, hasChevron: true))
+            case "HC9": return AnyView(DynamicWidthCard(cardVM, with: cardGroupVM.height).padding(.vertical))
+            case "HC5": return AnyView(ImageCardView(cardVM))
+            default: return AnyView(GenericCard(cardVM))
         }
     }
     
