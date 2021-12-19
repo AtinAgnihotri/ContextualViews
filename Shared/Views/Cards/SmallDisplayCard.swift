@@ -34,12 +34,13 @@ struct SmallDisplayCard: View {
                     .padding()
                 VStack (alignment: .leading) {
                     Text(cardVM.title)
-                        .font(Font.custom("Roboto-Medium", size: 14))
+//                        .font(Font.custom("Roboto-Medium", size: 14))
+                        .font(Font.system(size: 14))
                         .fontWeight(.semibold)
                         .padding(.horizontal, 5)
                     Text(cardVM.description)
-                        .font(Font.custom("Roboto-Regular", size: 12))
-                        .fontWeight(.thin)
+                        .font(Font.system(size: 14))
+                        .fontWeight(.regular)
                         .padding(.horizontal, 5)
                 }
                 if inScrollableStack {
