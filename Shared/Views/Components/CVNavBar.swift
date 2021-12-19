@@ -10,10 +10,11 @@ import SwiftUI
 struct CVNavBar: View {
     var body: some View {
         HStack {
-            Text("ContextualViews")
+            Text("fampay")
                 .font(Font.custom("Roboto-Regular", size: 20).bold())
-                .fontWeight(.bold)
+                .bold()
             Image("fp_icon")
+                .padding(.horizontal, -10)
         }
         .background(Color.white)
     }
