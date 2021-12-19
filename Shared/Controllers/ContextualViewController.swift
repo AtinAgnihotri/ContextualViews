@@ -20,6 +20,14 @@ class ContextualViewController: ObservableObject {
     }
     @Published var isLoading = false
     @Published var didAppLaunch = true
+    @Published var errorMessage = "" {
+        didSet {
+            print(errorMessage)
+            print(isLoading)
+            isLoading = false
+            print(isLoading)
+        }
+    }
     @Published var remindLaterCardNames: [String]
     @Published var dismissedCardNames: [String] {
         didSet {
@@ -47,15 +55,16 @@ class ContextualViewController: ObservableObject {
     }
     
     func refresh() {
+        errorMessage = ""
         isLoading = true
         WebService.shared.fetchHomepageConfig { [weak self] result in
             switch result {
             case .success(let response):
                 self?.loadCards(from: response.cardGroups)
-                
+                self?.errorMessage = ""
             case .failure(let error):
                 print(error)
-//                self?.isLoading = false
+                self?.errorMessage = self?.getErrorMessage(for: error) ?? "Oops! Something went wrong.\nPlease try again. Just swipe from the top 👆"
             }
             self?.isLoading = false
             self?.didAppLaunch = false
@@ -97,5 +106,13 @@ class ContextualViewController: ObservableObject {
         }
         cardGroups = newCardGroups
         
+    }
+    
+    private func getErrorMessage(for error: NetworkError) -> String {
+        switch error {
+        case .decodingError, .domainError: return "😵 Snap! Looks like something broke on our end. Please try again."
+        case .urlError: return "Okay, this should never have made it to production. If you're seeing this, and don't work with us, get ready to collect your bug bounty! 🤑"
+        case .serverError: return "😓 It seems our services are down at the moment. Please try again later."
+        }
     }
 }

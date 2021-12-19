@@ -23,6 +23,15 @@ class ContextualViewModel {
         controller.cardGroups.isEmpty
     }
     
+    var errorMessage: String {
+        controller.errorMessage
+    }
+    
+    var hasError: Bool {
+        !errorMessage.isEmpty
+    }
+    
+    
     func refresh() {
         controller.refresh()
     }

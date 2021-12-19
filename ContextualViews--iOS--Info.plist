@@ -4,7 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Utils/Fonts/Roboto.ttf</string>
+		<string></string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>dvfx</string>
+	</dict>
 </dict>
 </plist>

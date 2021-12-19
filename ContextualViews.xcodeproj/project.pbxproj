@@ -42,6 +42,8 @@
 		F8242118276E091F0004A63E /* CVNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8242116276E091F0004A63E /* CVNavBar.swift */; };
 		F824211D276E0A460004A63E /* CVNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211C276E0A460004A63E /* CVNavigationView.swift */; };
 		F824211E276E0A460004A63E /* CVNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211C276E0A460004A63E /* CVNavigationView.swift */; };
+		F8242120276F27450004A63E /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeActionButtonView.swift */; };
+		F8242121276F27450004A63E /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824211F276F27450004A63E /* SwipeActionButtonView.swift */; };
 		F839D145276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D135276CD07B00756044 /* ContextualViewsApp.swift */; };
 		F839D147276CD07D00756044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839D136276CD07B00756044 /* ContentView.swift */; };
@@ -83,6 +85,7 @@
 		F8242110276DF6290004A63E /* ContextualViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewModel.swift; sourceTree = "<group>"; };
 		F8242116276E091F0004A63E /* CVNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVNavBar.swift; sourceTree = "<group>"; };
 		F824211C276E0A460004A63E /* CVNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVNavigationView.swift; sourceTree = "<group>"; };
+		F824211F276F27450004A63E /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
 		F839D135276CD07B00756044 /* ContextualViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualViewsApp.swift; sourceTree = "<group>"; };
 		F839D136276CD07B00756044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F839D137276CD07D00756044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				F8242105276DA8D60004A63E /* IconView.swift */,
 				F8242108276DC3B50004A63E /* HC9BackgroundView.swift */,
 				F824210B276DCEA50004A63E /* HC5BackgroundView.swift */,
+				F824211F276F27450004A63E /* SwipeActionButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -390,6 +394,7 @@
 				F82420DE276CEC330004A63E /* CardItems.swift in Sources */,
 				F82420E2276CEFBD0004A63E /* SmallDisplayCardView.swift in Sources */,
 				F824210C276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
+				F8242120276F27450004A63E /* SwipeActionButtonView.swift in Sources */,
 				F87A62D4276CD4020083FBE1 /* Card.swift in Sources */,
 				F82420FD276D1FBD0004A63E /* CTAViewModel.swift in Sources */,
 			);
@@ -412,6 +417,7 @@
 				F87A62D9276CD43A0083FBE1 /* ContextualView.swift in Sources */,
 				F824211E276E0A460004A63E /* CVNavigationView.swift in Sources */,
 				F824210A276DC3B50004A63E /* HC9BackgroundView.swift in Sources */,
+				F8242121276F27450004A63E /* SwipeActionButtonView.swift in Sources */,
 				F824210D276DCEA50004A63E /* HC5BackgroundView.swift in Sources */,
 				F839D146276CD07D00756044 /* ContextualViewsApp.swift in Sources */,
 				F87A62D5276CD4020083FBE1 /* Card.swift in Sources */,
@@ -544,7 +550,6 @@
 				INFOPLIST_FILE = "ContextualViews--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -574,7 +579,6 @@
 				INFOPLIST_FILE = "ContextualViews--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

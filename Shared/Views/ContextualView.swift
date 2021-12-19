@@ -12,31 +12,55 @@ struct ContextualView: View {
     var contextualVM = ContextualViewModel()
     
     init() {
+        
     }
         
     var body: some View {
-        List {
-            ForEach(contextualVM.cardGroups, id:\.uuid) {
-                ContextualCardGroupView($0)
-                    .listRowInsets(EdgeInsets())
-                    
-                    .frame(minHeight: getMinHeight(for: $0))
-                    .padding(.vertical, getPadding(for: $0))
+        if contextualVM.hasError {
+            VStack {
+                Spacer()
+                Text(contextualVM.errorMessage)
+                    .font(.title3)
+                    .padding()
+                Button(action: contextualVM.refresh) {
+                    Text("Refresh")
+                        .padding()
+                        .background(Color.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                Spacer()
             }
-            .listRowInsets(EdgeInsets())
-            .listRowBackground(Color.clear)
-            .listRowSeparator(.hidden)
+        } else if contextualVM.isLoading {
+            VStack {
+                Spacer()
+                Text("Loading . . . ")
+                Spacer()
+            }
+        } else {
+            List {
+                ForEach(contextualVM.cardGroups, id:\.uuid) {
+                    ContextualCardGroupView($0)
+                        .listRowInsets(EdgeInsets())
+                        
+                        .frame(minHeight: getMinHeight(for: $0))
+                        .padding(.vertical, getPadding(for: $0))
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
+            }
+            .shadow(radius: 25)
+            .padding(.top, 20)
+            .padding(.leading, 20)
+            .listStyle(PlainListStyle())
+            .listSeparatorStyle(style: .none)
+            .refreshable {
+                contextualVM.refresh()
+            }
+            .frame(maxWidth: .infinity)
+            .edgesIgnoringSafeArea(.trailing)
         }
-        .shadow(radius: 25)
-        .padding(.top, 20)
-        .padding(.leading, 20)
-        .listStyle(PlainListStyle())
-        .listSeparatorStyle(style: .none)
-        .refreshable {
-            contextualVM.refresh()
-        }
-        .frame(maxWidth: .infinity)
-        .edgesIgnoringSafeArea(.trailing)
     }
     
     func getMinHeight(for cardGroup: CardGroupViewModel) -> CGFloat {

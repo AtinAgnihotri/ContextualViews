@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct SwipeActionButtonView: View {
+    
+    let action: () -> Void
+    let imageName: String
+    let title: String
+    
+    init(title: String, imageName: String, action: @escaping () -> Void) {
+        self.title = title
+        self.imageName = imageName
+        self.action = action
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action) {
+            VStack {
+                Image(imageName)
+                    .fitToView()
+                    .frame(width: 30)
+                    .padding(.top)
+                Text(title)
+                    .padding(.bottom)
+                    .padding(.horizontal, 5)
+            }
+            .background(Color(hex: "#F7F6F3"))
+            .cornerRadius(5)
+        }
     }
 }
 
 struct SwipeActionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        SwipeActionButtonView()
+        SwipeActionButtonView(title: "Context Views", imageName: "fp_icon") {
+            print("Hello")
+        }
     }
 }

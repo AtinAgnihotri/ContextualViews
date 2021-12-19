@@ -18,7 +18,7 @@ struct CardBackground: View {
     }
     
     var body: some View {
-        CachedAsyncImage(url: URL(string: url)) { phase in
+        AsyncImage(url: URL(string: url)) { phase in
             switch phase {
             case .empty:
                 bgColor

@@ -11,6 +11,7 @@ struct BigDisplayCardView: CardType {
     
     @ObservedObject var cardVM: CardViewModel
     @State private var swipeOffset: CGFloat = 0
+    @State private var cardOpacity: CGFloat = 1
     @Environment(\.openURL) var openURL
     
     let offsetAmount = UIScreen.main.bounds.width / 3
@@ -25,33 +26,9 @@ struct BigDisplayCardView: CardType {
             HStack {
                 VStack(alignment: .leading) {
                     Spacer()
-                    Button(action: remindLater) {
-                        VStack {
-                            Image("bell_icon")
-                                .fitToView()
-                                .frame(width: 30)
-                                .padding(.top)
-                            Text("remind later")
-                                .padding(.bottom)
-                                .padding(.horizontal, 5)
-                        }
-                        .background(Color(hex: "#F7F6F3"))
-                        .cornerRadius(5)
-                    }
+                    SwipeActionButtonView(title: "remind later", imageName: "bell_icon", action: remindLater)
                     Spacer()
-                    Button(action: dismiss) {
-                        VStack {
-                            Image("dismiss_icon")
-                                .fitToView()
-                                .frame(width: 30)
-                                .padding(.top)
-                            Text("dismiss now")
-                                .padding(.bottom)
-                                .padding(.horizontal, 5)
-                        }
-                        .background(Color(hex: "#F7F6F3"))
-                        .cornerRadius(5)
-                    }
+                    SwipeActionButtonView(title: "dismiss now", imageName: "dismiss_icon", action: dismiss)
                     Spacer()
                 }
                 .padding()
@@ -60,12 +37,15 @@ struct BigDisplayCardView: CardType {
             .background(Color.white)
             .cornerRadius(10)
             ZStack {
-//                Button(action: onTap) {
-                    CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
-//                }
+                CardBackground(for: cardVM.bgImageUrl, with: cardVM.backgroundColor)
                 .onTapGesture {
-                    onTap()
+                    if swipeOffset != 0 {
+                        swipeOffset = 0
+                    } else {
+                        onTap()
+                    }
                 }
+                
                 HStack (alignment: .bottom) {
                     Spacer(minLength: 0)
                     VStack (alignment: .leading){
@@ -88,12 +68,14 @@ struct BigDisplayCardView: CardType {
                 }
             }
             .offset(x: swipeOffset, y: 0)
-            .animation(.easeInOut(duration: 0.5), value: swipeOffset)
+            
         }
+        .animation(.easeInOut(duration: 0.5), value: swipeOffset)
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity)
         .frame(height: 400)
         .cornerRadius(10)
+        .transition(.slide)
         .onLongPressGesture {
             swipeOffset = swipeOffset == 0 ? offsetAmount : 0
         }
