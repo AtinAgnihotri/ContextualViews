@@ -4,9 +4,9 @@ My experiment with showing a dynamic list of view that is rendered using json fr
 
 The belle of the ball here is ContextView which is a resuable component that you can plug and play anywhere.
 
-It uses the response fetched from an API to dynamically create and display a list of cards, the idea being, to used this to dynamically card list / homepage for a user.
+It uses the response fetched from an API to dynamically create and display a list of cards, the idea being, to use this to dynamically card list / homepage for a user.
 
-The App is implemented in MVVM-C pattern
+The App is implemented in MVVM-C pattern.
 
 ### 🍎 Tech Used:
 
