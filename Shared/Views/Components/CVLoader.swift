@@ -16,7 +16,6 @@ struct CVLoader: View {
 
     var body: some View {
         Image("fp_icon")
-            
             .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
             .scaleEffect(2)
             .onAppear {
