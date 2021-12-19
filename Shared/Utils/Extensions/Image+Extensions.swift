@@ -1,41 +1,25 @@
 //
-//  CustomViewModifiers.swift
+//  Image+Extensions.swift
 //  ContextualViews
 //
-//  Created by Atin Aganihotri on 18/12/21.
+//  Created by Atin Aganihotri on 19/12/21.
 //
 
 import SwiftUI
 
-struct ListSeparatorStyle: ViewModifier {
-    
-    let style: UITableViewCell.SeparatorStyle
-    
-    func body(content: Content) -> some View {
-        content
-            .onAppear() {
-                UITableView.appearance().separatorStyle = self.style
-            }
-    }
-}
-
-extension View {
-    
-    func listSeparatorStyle(style: UITableViewCell.SeparatorStyle) -> some View {
-        ModifiedContent(content: self, modifier: ListSeparatorStyle(style: style))
-    }
-}
-
 extension Image {
     
+    // Fit an image to it's parent view
     func fitToView() -> some View {
         self.resizable().scaledToFit()
     }
     
+    // Fill an image in it's parent view
     func fillInView() -> some View {
         self.resizable().scaledToFill()
     }
     
+    // Icon modifiers for Small Display Cards
     func icon(shape: IconShape = .cirlce) -> some View {
         switch shape {
         case .cirlce: return AnyView(self

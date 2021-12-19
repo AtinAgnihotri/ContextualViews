@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContextualCardGroupView: View {
+struct ContextualCardGroup: View {
     
     @ObservedObject private var cardGroupVM: CardGroupViewModel
     

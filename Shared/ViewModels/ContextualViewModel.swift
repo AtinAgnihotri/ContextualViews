@@ -10,10 +10,6 @@ import Foundation
 class ContextualViewModel {
     private let controller = ContextController.shared
     
-    init() {
-        print("ContextualViewModel was initialized")
-    }
-    
     var cardGroups: [CardGroupViewModel] {
         return controller.cardGroups
     }
@@ -29,7 +25,6 @@ class ContextualViewModel {
     var hasError: Bool {
         !errorMessage.isEmpty
     }
-    
     
     func refresh() {
         controller.refresh()

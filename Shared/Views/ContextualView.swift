@@ -10,10 +10,6 @@ import SwiftUI
 struct ContextualView: View {
     @ObservedObject var controller = ContextController.shared
     var contextualVM = ContextualViewModel()
-    
-    init() {
-        
-    }
         
     var body: some View {
         if contextualVM.hasError {
@@ -40,7 +36,7 @@ struct ContextualView: View {
         } else {
             List {
                 ForEach(contextualVM.cardGroups, id:\.uuid) { cardGroup in
-                        ContextualCardGroupView(cardGroup)
+                        ContextualCardGroup(cardGroup)
                             .listRowInsets(EdgeInsets())
                             .listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                             .frame(minHeight: getMinHeight(for: cardGroup))

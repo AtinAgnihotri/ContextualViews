@@ -100,20 +100,18 @@ class CardViewModel: ObservableObject {
             }
             wc += 1
         }
-        print(words)
-        print(attrWords)
-        print(attrCount, ac)
-        print(wordCount, wc)
         var attrString = AttributedString(words.joined(separator: " "))
         for entity in formattedText.entities {
             if let range = attrString.range(of: entity.text) {
+                // Handle urls, if any
                 if let url = entity.url {
                     attrString[range].link = URL(string: url)
                 }
+                // Handle colors, if any
                 if let color = entity.color {
                     attrString[range].foregroundColor = Color(hex: color)
                 }
-                // MARK: TODO Set font styles
+                // Handle styling, if any
                 if let style = entity.fontStyle {
                     if style == "bold" {
                         attrString[range].font = .custom("Roboto-Regular", fixedSize: 14).bold()
